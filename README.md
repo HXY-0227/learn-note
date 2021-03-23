@@ -17,3 +17,7 @@
 
 - [05-零拷贝](https://github.com/HXY-0227/learn-note/blob/master/netty/05-%E9%9B%B6%E6%8B%B7%E8%B4%9D.md)
 
+### RabbitMQ
+
+- [01-初探MQ-MQ的三大使用场景：应用解耦、异步提速、削峰填谷](https://github.com/HXY-0227/learn-note/blob/master/rabbitmq/01-%E5%88%9D%E6%8E%A2MQ-MQ%E7%9A%84%E4%B8%89%E5%A4%A7%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9A%E5%BA%94%E7%94%A8%E8%A7%A3%E8%80%A6%E3%80%81%E5%BC%82%E6%AD%A5%E6%8F%90%E9%80%9F%E3%80%81%E5%89%8A%E5%B3%B0%E5%A1%AB%E8%B0%B7.md)
+- [02-RabbitMQ的几种基本工作模式](https://github.com/HXY-0227/learn-note/blob/master/rabbitmq/02-RabbitMQ%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9F%BA%E6%9C%AC%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F.md)
