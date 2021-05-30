@@ -2,7 +2,7 @@
 
 ## 底层数据结构（JDK1.8）
 
-![](HashMap.png)
+![](img/HashMap.png)
 
 HashMap是java对哈希表的一种实现，他保持了哈希表存储key-value键值对的特点，可以通过key快速获取value。他的插入过程大概分为以下几个步骤：
 
@@ -115,7 +115,7 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 
 整个流程大致如下
 
-![](put流程.png)
+![](img/put流程.png)
 
 put方法的几点说明
 
@@ -338,11 +338,11 @@ void transfer(Entry[] newTable, boolean rehash) {
 
 执行流程如下：
 
-![](transfer.png)
+![](img/transfer.png)
 
 在单线程情况下，这段代码是可以正常运行的，这没什么问题，但是如果有两个线程同时执行这段代码，假设有线程1和线程2同时进来，线程1停在了Entry<K,V> next = e.next这里，那么e指向key:1这个节点，next指向key:2这个节点。然后线程2正常执行，实现了我么上面讨论的预期效果。此时线程1被唤醒，执行e.next = newTable[i]，最终形成了我们下面所说的一个循环链表。
 
-![](循环链表.png)
+![](img/循环链表.png)
 
 ##  HashMap 和 HashTable 的区别
 

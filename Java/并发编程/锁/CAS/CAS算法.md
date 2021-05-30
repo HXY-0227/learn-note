@@ -6,7 +6,7 @@ java的锁机制中，我们知道有很多种锁，那可能最常听到的就�
 
 ## CAS算法的主要原理
 
-![](CAS算法.png)
+![](img/CAS算法.png)
 
 上图中A：主内存中V值的副本、B：更改的目标值、V：内存中的值
 
@@ -40,7 +40,7 @@ public final int getAndAddInt(Object var1, long var2, int var4) {
 
 ### ABA问题
 
-![](CAS_ABA问题.png)
+![](img/CAS_ABA问题.png)
 
 以上图为例，线程1修改了V的值为1，但是线程3又把他改回去了，导致线程2读到V的值，看着没有改变，实际已经经过了线程3改变了。解决这个问题的方法是每次更新V的值时，在加一个版本号记录每次的修改。
 

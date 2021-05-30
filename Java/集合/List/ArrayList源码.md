@@ -2,7 +2,7 @@
 
 ## 底层数据结构
 
-![](ArrayList数据结构.png)
+![](img/ArrayList数据结构.png)
 
 ArrayList是在底层维护了一个elementData数组，添加了自动扩容等功能，最终形成了一个动态数组。
 
@@ -187,7 +187,7 @@ public static void main(String[] args) {
 // 输出：1---2---3---
 ```
 
-![](错误删除.png)
+![](img/错误删除.png)
 
 这种格式不能正常删除，原因如图所示：在`i = 2`的时候，本来位于2位置的元素是2，但现在已经移动到了1的位置，所以删不掉
 

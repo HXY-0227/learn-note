@@ -2,7 +2,7 @@
 
 ## 底层数据结构
 
-![](LinkedList数据结构.png)
+![](img/LinkedList数据结构.png)
 
 LinkedList底层维护了一个双向链表，每个节点包括一个前驱指针和后继指针
 
@@ -156,7 +156,7 @@ void linkBefore(E e, Node<E> succ) {
 
 ## remove()
 
-![](LinkedList删除节点.png)
+![](img/LinkedList删除节点.png)
 
 链表删除节点Node1，如图所示，让First的的next指针指向Node，Node的prev指针指向First，Node的prev指针和next指针都指向null。这样Node1节点就从链表中删除了。
 
