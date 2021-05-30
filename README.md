@@ -6,6 +6,22 @@
 
 ## 内容导航
 
+### 数据结构和算法
+
+- [hashCode方法介绍](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%93%88%E5%B8%8C%E8%A1%A8/hashCode%E6%96%B9%E6%B3%95.md)
+- [堆&优先队列](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%A0%86&%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/MaxHeap.md)
+- [AVL树](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/AVL%E6%A0%91/AVLTree.md)
+- [二叉搜索树](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/BSTree.md)
+- [数组的几个算法题](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84.md)
+- [链表的几种形式以及以及约瑟夫问题和基于leetcode上根据链表和hash表设计一个LRU缓存淘汰算法](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8.md)
+- [跳跃表在redis中的应用](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/%E8%B7%B3%E8%B7%83%E8%A1%A8/%E8%B7%B3%E8%B7%83%E8%A1%A8.md)
+- [队列和循环队列以及队列在JDK源码中的经典应用](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/%E9%98%9F%E5%88%97/%E9%98%9F%E5%88%97.md)
+- [栈的实现和其在括号匹配以及在中缀转后缀表达式中的应用](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/%E6%A0%88/%E6%A0%88.md)
+- [堆排序](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%8E%92%E5%BA%8F/%E5%A0%86%E6%8E%92%E5%BA%8F.md)
+- [归并排序](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%8E%92%E5%BA%8F/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.md)
+- [快速排序](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.md)
+- [直接插入排序&折半插入排序以及希尔排序](https://gitee.com/hxy-0227/learn-note/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%8E%92%E5%BA%8F/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.md)
+
 ### Java
 
 #### 并发编程
