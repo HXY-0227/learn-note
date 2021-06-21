@@ -60,10 +60,14 @@
 - [02-RabbitMQ的几种基本工作模式](https://gitee.com/hxy-0227/learn-note/blob/master/rabbitmq/02-RabbitMQ%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9F%BA%E6%9C%AC%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F.md)
 - [03-RabbitMQ消息的可靠性投递和死信队列](https://gitee.com/hxy-0227/learn-note/blob/master/rabbitmq/03-RabbitMQ%E6%B6%88%E6%81%AF%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%8A%95%E9%80%92%E5%92%8C%E6%AD%BB%E4%BF%A1%E9%98%9F%E5%88%97.md)
 
-### zookeeper
+### Zookeeper
 
 - [zk做分布式锁](https://gitee.com/hxy-0227/learn-note/blob/master/zookeeper/zk%E5%81%9A%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81.md)
 
-### redis
+### Redis
 
 - [redis做分布式锁](https://gitee.com/hxy-0227/learn-note/blob/master/redis/redis%E5%81%9A%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81.md)
+
+### web安全
+
+- [sql注入的N种方式](https://gitee.com/hxy-0227/learn-note/blob/master/SQL%E6%B3%A8%E5%85%A5/sql%E6%B3%A8%E5%85%A5%E7%9A%84N%E7%A7%8D%E6%96%B9%E5%BC%8F.md)
