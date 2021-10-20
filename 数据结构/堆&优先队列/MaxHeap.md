@@ -287,11 +287,6 @@ public class Solution347 {
         return result;
     }
 
-    public static void main(String[] args) {
-        int[] arr = new int[] {1,1,1,2,2,3,3,3};
-//        topKFrequent(arr,2);
-        System.out.println(topKFrequent(arr, 2));
-    }
 }
 
 ```
