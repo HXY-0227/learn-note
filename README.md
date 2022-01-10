@@ -73,3 +73,9 @@
 ### web安全
 
 - [sql注入的N种方式](https://gitee.com/hxy-0227/learn-note/blob/master/SQL%E6%B3%A8%E5%85%A5/sql%E6%B3%A8%E5%85%A5%E7%9A%84N%E7%A7%8D%E6%96%B9%E5%BC%8F.md)
+
+### ElasticSearch
+
+- [ElasticSearch基本的概念](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E5%9F%BA%E6%9C%AC%E7%9A%84API.md)
+- [ElasticSearch增删改查基础Api](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E5%9F%BA%E6%9C%AC%E7%9A%84API.md)
+- [ElasticSearch查询DSL](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E6%9F%A5%E8%AF%A2DSL.md)
