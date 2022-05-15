@@ -2,37 +2,10 @@
 
 ## synchroized基本认识
 
-synchroized用法一般有两种：修饰方法，修饰代码块：
-
-```java
-public class Main {
-    
-    // 1. 修饰静态方法，是加在类对象上
-    public static synchronized void test() {
-        
-    } 
-    
-    // 2. synchronized修饰普通方法，相当于加在当前对象上
-    public synchronized void syncMethod() {
-        System.out.println("**********");
-    }
-    
-    
-    // 3. 修饰代码块，这种加锁粒度小 
-    public void test() {
-        synchronized (Main.class) {
-            System.out.println("----------");
-        }
-    }
-
-    
-}
-```
-
 编译后的字节码文件：
 
 ```
-![synchroized加锁过程](E:\学习笔记\Java\并发编程\锁\synchronized\img\synchroized加锁过程.png) // 修饰代码块
+
  public void test();
     descriptor: ()V
     flags: ACC_PUBLIC

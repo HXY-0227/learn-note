@@ -780,6 +780,18 @@ POST /baike/_search
 显而易见，这种局面并不是我们想要看到的，那么有没有什么办法呢？es中就提供了一种解决方案，叫做`dis_max`。接下来我们用他再做一次查询，看看有什么结果，很明显ID为5的这条数据这一次获得了一个较高的算分。
 
 ```json
+POST /baike/_search
+{
+  "query": {
+    "dis_max": {
+      "queries": [
+        {"match": {"title": "Brown fox"}},
+        {"match": {"body": "Brown fox"}}
+      ]
+    }
+  }
+}
+
 "hits" : {
     "total" : {
         "value" : 2,
@@ -1049,7 +1061,7 @@ GET kibana_sample_data_ecommerce/_search
 
 ### multi match（[Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html)）
 
-multi match是在match的基础进行了一些加强，他支持在对个字段进行查询。同时在字段的描述上还支持通配符。
+**multi_match**是在match的基础进行了一些加强，他支持在对个字段进行查询。同时在字段的描述上还支持通配符。
 
 ```json
 # 在customer_full_name、customer_first_name中有一个字段包括查询条件就可以匹配到
@@ -1081,6 +1093,127 @@ GET kibana_sample_data_ecommerce/_search
   "_source":["customer_full_name","currency","customer_first_name"]
 }
 ```
+
+在**multi_match**这种查询方式中，还有一个特别重要的字段`type`，他的每一个查询其实都是依赖这个字段的，虽然我们上面没有指定，那是因为他有一个默认值`best_fields`。接下来我们一起看看，除了`best_fields`之外还有那些类型以及每一个类型有什么用处。
+
+- `best_fields`：以前面讨论`dis_max`为例，比如我们要在一个文档中的title和body两个字段中查找`brown fox`，如果我们要查找的两个单词按照顺序同时出现，那么肯定是比分别出现在不同的字段中是有意义的，我们就把两个单词同时按照顺序出现在一个字段中这种情况叫做`best_fields`。这样的话，`multi_match`就会被包装成`dis_max`这种方式,去查询。那我们知道`dis_max`还支持一个参数`tie_breaker`，因此这里也是支持的
+
+  ```json
+  GET baike/_search
+  {
+    "query": {
+      "multi_match": {
+        "query": "Brown fox",
+        "fields": ["title","body"],
+        "type": "best_fields",
+        "tie_breaker": 0.1
+      }
+    }
+  }
+  
+  # 上面的请求最终会按照这样的方式去执行
+  POST /baike/_search
+  {
+    "query": {
+      "dis_max": {
+        "queries": [
+          {"match": {"title": "Brown fox"}},
+          {"match": {"body": "Brown fox"}}
+        ],
+        "tie_breaker": 0.1
+      }
+    }
+  }
+  ```
+
+- `most_fields`：`best_fields`是取子查询中算分最高的作为最终算分，而`most_fields`则是取子查询算分的和作为最终算分，我们也可以理解按照关键字出现的次数来算，出现的越多，算分越高，这里还是可以参考前文关于对`dis_max`的讨论来理解。
+
+  ```json
+  GET baike/_search
+  {
+    "query": {
+      "multi_match": {
+        "query": "Brown fox",
+        "fields": ["title","body"],
+        "type": "most_fields",
+        "tie_breaker": 0.1
+      }
+    }
+  }
+  
+  # 上面的请求最终会按照这样的方式去执行
+  POST baike/_search
+  {
+    "query": {
+      "bool": {
+        "should": [
+          {"match": {"title":"Brown fox"}},
+          {"match": {"body":"Brown fox"}}
+        ]
+      }
+    }
+  }
+  ```
+
+- `phrase` and `phrase_prefix`：这两种类型和`best_fields`的算分策略是一致的，我们讨论`best_fields`的时候在示例代码中说明他最终会被翻译为`dis_max`加上`match`去执行，那么这两种类型就是把`match`用`match_phrase`和`match_phrase_prefix`替换掉。
+
+  ```json
+  GET baike/_search
+  {
+    "query": {
+      "multi_match": {
+        "query": "Brow",
+        "fields": ["title","body"],
+        "type": "phrase_prefix",
+        "tie_breaker": 0.1
+      }
+    }
+  }
+  
+  # 上面的请求最终会按照这样的方式去执行
+  GET baike/_search
+  {
+    "query": {
+      "dis_max": {
+        "tie_breaker": 0.1,
+        "queries": [
+          {"match_phrase_prefix": {"title": "Brow"}},
+          {"match_phrase_prefix": {"body": "Brow"}}
+        ]
+      }
+    }
+  }
+  ```
+
+- `bool_prefix`：这种类型和`most_fields`的算分策略是一致的，不过他会用`match_bool_prefix`替换掉`match`。
+
+  ```json
+  GET baike/_search
+  {
+    "query": {
+      "multi_match": {
+        "query": "Brow",
+        "fields": ["title","body"],
+        "type": "bool_prefix"
+      }
+    }
+  }
+  
+  # 上面的请求最终会按照这样的方式去执行
+  GET baike/_search
+  {
+    "query": {
+      "bool": {
+        "should": [
+          {"match_bool_prefix": {"title": "Brow"}},
+          {"match_bool_prefix": {"body": "Brow"}}
+        ]
+      }
+    }
+  }
+  ```
+
+- `cross_fields`：参考**跨字段查询cross_fields**中的介绍。
 
 ## 脚本字段
 

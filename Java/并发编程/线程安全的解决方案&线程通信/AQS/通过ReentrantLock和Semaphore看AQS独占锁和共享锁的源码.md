@@ -20,7 +20,7 @@
 
 ### 条件队列
 
-条件队列也是用来管理没有获取到锁资源的一种队列，他主要负责和锁配合使用，满足一定条件就让条件队列中的线程做一些事。比如下面这段代码，代码来自`ArrayBlockingQueue.java`。
+条件队列也是用来管理没有获取到锁资源的一种队列，他主要负责和锁配合使用，满足一定条件就让条件队列中的线程做一些事（可以理解为线程通信的一种方式，synchroized提供了wait/notify机制，而Lock锁可以结合条件队列实现对应的功能）。比如下面这段代码，代码来自`ArrayBlockingQueue.java`。
 
 ```java
 public ArrayBlockingQueue(int capacity, boolean fair) {
@@ -39,7 +39,7 @@ public void put(E e) throws InterruptedException {
     lock.lockInterruptibly();
     try {
         while (count == items.length)
-            // 如果满足上面的条件，就让notFull这个条件队列中的线程都等待。。。
+            // 如果满足上面的条件，就将当前线程放到条件队列中等待
             notFull.await();
         enqueue(e);
     } finally {
