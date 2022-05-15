@@ -28,13 +28,22 @@
 
 #### 并发编程
 
-- [多线程](https://gitee.com/hxy-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B.md)
-- [线程池-ThreadPoolExecutor](https://gitee.com/hxy-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0.md)
-- [synchroized原理深究](https://gitee.com/hxy-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E9%94%81/synchronized/synchroized.md)
-- [CAS算法](https://gitee.com/hxy-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E9%94%81/CAS/CAS%E7%AE%97%E6%B3%95.md)
-- [通过ReentrantLock和Semaphore看AQS独占锁和共享锁的源码](https://gitee.com/hxy-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E9%94%81/AQS/%E9%80%9A%E8%BF%87ReentrantLock%E5%92%8CSemaphore%E7%9C%8BAQS%E7%8B%AC%E5%8D%A0%E9%94%81%E5%92%8C%E5%85%B1%E4%BA%AB%E9%94%81%E7%9A%84%E6%BA%90%E7%A0%81.md)
-- [CountDownLatch和CyclicBarrier](https://gitee.com/hxy-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E9%94%81/AQS/CountDownLatch.md)
-- [阻塞队列之LinkedBlockingQueue](https://gitee.com/hxy-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97.md)
+- [01-创建和使用线程的4种方式](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%26%E7%BA%BF%E7%A8%8B%E6%B1%A0/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E7%BA%BF%E7%A8%8B.md)
+- [02-线程不安全的本质](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E6%9C%AC%E8%B4%A8/01-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E4%BB%A5%E5%8F%8A%E5%85%B1%E4%BA%AB%E5%8F%98%E9%87%8F.md)
+- [03-从图灵机和冯诺依曼到计算机内存模型和JMM模型分析线程不安全的原因](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E6%9C%AC%E8%B4%A8/02-%E4%BB%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E5%92%8CJMM%E5%88%86%E6%9E%90%E7%BA%BF%E7%A8%8B%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84%E5%8E%9F%E5%9B%A0.md)
+- [04-线程同步方案之synchroized关键字的正确使用](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/synchronized/synchroized%E5%85%B3%E9%94%AE%E5%AD%97%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8.md)
+- [05-线程通信之wait/notify机制](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E4%B9%8Bwait%26notify.md)
+- [06-线程同步方案之CAS算法](https://github.com/HXY-0227/learn-note/tree/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/CAS)
+- [07-线程同步方案之Lock锁](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/AQS/ReentrantLock%E9%94%81%E7%9A%84%E4%BD%BF%E7%94%A8.md)
+- [08-线程通信之Condition机制](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E4%B9%8BCondition.md)
+- [09-什么是死锁以及如何排查死锁 待补充]()
+- [10-ThreadLock的正确使用 待补充]()
+- [11-volatile关键字有什么用，怎么用 待补充]()
+- [12-synchroized原理深究 待修订](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/synchronized/synchroized%E5%85%B3%E9%94%AE%E5%AD%97%E5%8E%9F%E7%90%86%E6%8E%A2%E7%A9%B6.md)
+- [13-线程池-ThreadPoolExecutor源码探究](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%26%E7%BA%BF%E7%A8%8B%E6%B1%A0/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.md)
+- [14-通过ReentrantLock和Semaphore看AQS独占锁和共享锁的源码](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/AQS/%E9%80%9A%E8%BF%87ReentrantLock%E5%92%8CSemaphore%E7%9C%8BAQS%E7%8B%AC%E5%8D%A0%E9%94%81%E5%92%8C%E5%85%B1%E4%BA%AB%E9%94%81%E7%9A%84%E6%BA%90%E7%A0%81.md)
+- [15-CountDownLatch和CyclicBarrier  待修订](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/AQS/CountDownLatch.md)
+- [16-阻塞队列之LinkedBlockingQueue 待修订](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97.md)
 
 #### 集合
 
@@ -76,6 +85,8 @@
 
 ### ElasticSearch
 
-- [ElasticSearch基本的概念](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E5%9F%BA%E6%9C%AC%E7%9A%84API.md)
-- [ElasticSearch增删改查基础Api](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E5%9F%BA%E6%9C%AC%E7%9A%84API.md)
-- [ElasticSearch查询DSL](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E6%9F%A5%E8%AF%A2DSL.md)
+- [01-ElasticSearch基本的概念](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.md)
+- [02-ElasticSearch增删改查基础Api](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E5%9F%BA%E6%9C%AC%E7%9A%84API.md)
+- [03-ElasticSearch查询DSL](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/ElasticSearch%E6%9F%A5%E8%AF%A2DSL.md)
+- [04-ElasticSearch跨字段查询cross_fields](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/%E8%B7%A8%E5%AD%97%E6%AE%B5%E6%9F%A5%E8%AF%A2cross_fields.md)
+- [05-ElasticSearch和Spring boot的整合](https://github.com/HXY-0227/learn-note/blob/master/ElasticSearch/SpringBoot%20Data%E6%95%B4%E5%90%88ElasticSearch.md)
