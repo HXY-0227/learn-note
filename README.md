@@ -36,7 +36,7 @@
 - [06-线程同步方案之CAS算法](https://github.com/HXY-0227/learn-note/tree/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/CAS)
 - [07-线程同步方案之Lock锁](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/AQS/ReentrantLock%E9%94%81%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 - [08-线程通信之Condition机制](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E4%B9%8BCondition.md)
-- [09-什么是死锁以及如何排查死锁 待补充]()
+- [09-什么是死锁以及如何排查死锁]([learn-note/死锁如何排查.md at master · HXY-0227/learn-note (github.com)](https://github.com/HXY-0227/learn-note/blob/master/Java/并发编程/死锁/死锁如何排查.md))
 - [10-ThreadLock的正确使用 待补充]()
 - [11-volatile关键字有什么用，怎么用 待补充]()
 - [12-synchroized原理深究 待修订](https://github.com/HXY-0227/learn-note/blob/master/Java/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%26%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1/synchronized/synchroized%E5%85%B3%E9%94%AE%E5%AD%97%E5%8E%9F%E7%90%86%E6%8E%A2%E7%A9%B6.md)
